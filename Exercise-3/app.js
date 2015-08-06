@@ -7,6 +7,7 @@
     var gem = {
         name: 'Dodecahedron',
         price: 2.95,
-        description: '........',
+        description: 'Some gems have hidden qualitiesbeyond their luster, beyond their shine...Dodeca is one of those gems',
+        canPurchase: false
     }
 })();
