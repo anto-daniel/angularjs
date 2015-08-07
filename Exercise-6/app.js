@@ -14,7 +14,7 @@
                     full: 'dodecahedron-01-full.jpg',
                     thumb: 'dodecahedron-01-thumb.jpg'
                 },
-            ];
+            ],
             canPurchase: true,
         },
         {
@@ -26,7 +26,7 @@
                     full: 'pentagonal-01-full.jpg',
                     thumb: 'pentagonal-01-thumb.jpg'
                 },
-            ];
+            ],
 
             canPurchase: false,
         }
