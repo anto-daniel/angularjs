@@ -20,7 +20,7 @@
         {
             name: 'Pentagonal gem',
             price: 5.95,
-            description: 'Some gems have hidden qualities beyond their cluster, beyond their shine...Dodeca is one of those gems',
+            description: 'Some gems have great qualities beyond their capabilities, beyond their shine...Dodeca is one of those gems',
             images: [
                 {
                     full: 'pentagonal-01-full.jpg',
