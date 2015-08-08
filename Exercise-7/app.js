@@ -20,7 +20,7 @@
         {
             name: 'Pentagonal gem',
             price: 5.95,
-            description: 'Some gems have great qualities beyond their capabilities, beyond their shine...Pentagonal is one of those gems',
+            description: 'Origin of the Pentagonal Gem is unknown, hence its low value. It has very high shine and 12 sides,',
             images: [
                 {
                     full: 'pentagonal-01-full.jpg',
