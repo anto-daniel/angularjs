@@ -22,6 +22,18 @@
                 </ul>
                 {{tab}}
             </section>
+            <div class="panel" ng-show="tab === 1">
+                <h4>Description</h4>
+                <p>{{product.desription}}</p>
+            </div>
+            <div class="panel" ng-show="tab === 2">
+                <h4>Specifications</h4>
+                <blockquote>None Yet</blockquote>
+            </div>
+            <div class="panel" ng-show="tab === 3">
+                <h4>Review</h4>
+                <blockquote>None Yet</blockquote>
+            </div>
        </li>
    </ul>
 
