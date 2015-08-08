@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+</head>
+<body ng-controller="StoreController as store">
+   <ul class="list-group">
+       <li class="list-group-item" ng-repeat="product in store.products">
+           <h3>
+               {{product.name}}
+               <em class="pull-right">{{product.price | currency }}</em>
+               <img ng-src="{{product.images[0].full}}"/>
+           </h3>
+           <section>
+                <ul class="nav nav-pills">
+                    <li><a href ng-click="tab = 1">Description</a></li>
+                    <li><a href ng-click="tab = 2">Specification</a> </li>
+                    <li><a href ng-click="tab = 3">Review</a> </li>
+
+                </ul>
+            {{tab}}
+    </section>
+       </li>
+   </ul>
+
+
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body
+</html>
