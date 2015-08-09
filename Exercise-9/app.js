@@ -1,10 +1,13 @@
 (function () {
-    var app = angular.module('store', []);
+    "use strict";
+    /*global angular, gems*/
+    var app = angular.module('store', []),
+        gems;
     app.controller('StoreController', function () {
         this.products = gems;
     });
 
-    var gems = [
+    gems = [
         {
             name: 'Dodecahedron',
             price: 2.00,
@@ -62,4 +65,4 @@
             this.review = {};
         };
     });
-})();
+}());
