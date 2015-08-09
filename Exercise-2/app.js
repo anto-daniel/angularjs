@@ -1,12 +1,15 @@
-(function() {
-    var app = angular.module('store', []);
-    app.controller('StoreController', function() {
+(function () {
+    "use strict";
+    /*global angular*/
+    var app = angular.module('store', []),
+        gem;
+    app.controller('StoreController', function () {
         this.product = gem;
     });
 
-    var gem = {
+    gem = {
         name: 'Dodecahedron',
         price: 2.95,
-        description: '........',
-    }
-})();
+        description: '........'
+    };
+}());
