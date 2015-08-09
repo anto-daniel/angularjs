@@ -1,6 +1,6 @@
-(function() {
+(function () {
     var app = angular.module('store', []);
-    app.controller('StoreController', function() {
+    app.controller('StoreController', function () {
         this.products = gems;
     });
 
@@ -13,7 +13,7 @@
                 {
                     full: 'dodecahedron-01-full.jpg',
                     thumb: 'dodecahedron-01-thumb.jpg'
-                },
+                }
             ],
             canPurchase: true,
             reviews: [
@@ -26,8 +26,8 @@
                     stars: 1,
                     body: "This product sucks",
                     author: "tim@hater.com"
-                },
-            ],
+                }
+            ]
         },
         {
             name: 'Pentagonal gem',
@@ -37,22 +37,28 @@
                 {
                     full: 'pentagonal-01-full.jpg',
                     thumb: 'pentagonal-01-thumb.jpg'
-                },
+                }
             ],
-
-            canPurchase: false,
+            canPurchase: false
         }
     ];
-    app.controller("PanelController", function() {
+    app.controller("PanelController", function () {
         this.tab = 1;
 
-        this.selectTab = function(setTab) {
+        this.selectTab = function (setTab) {
             this.tab = setTab;
         };
 
-        this.isSelected = function(checkTab) {
+        this.isSelected = function (checkTab) {
             return this.tab === checkTab;
         };
 
+    });
+    app.controller("ReviewController", function () {
+        this.review = {};
+
+        this.addReview = function (product) {
+            product.reviews.push(this.review);
+        };
     });
 })();
