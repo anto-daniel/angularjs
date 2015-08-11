@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>AngularJS - Tabbing Concept</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body ng-controller="StoreController as store">
    <ul class="list-group">
@@ -59,7 +60,7 @@
                         </select>
                         Comment: <textarea ng-model="reviewCtrl.review.body" required></textarea></br>
                         <label>by:</label>
-                        <input ng-model="reviewCtrl.review.author" type="email"  required/>
+                        <input ng-model="reviewCtrl.review.author" type="email" name="author" class="ng-dirty ng-invalid" required/>
                         <input type="submit" value="Submit" />
                         <div> reviewForm is {{reviewForm.$valid}}</div>
                     </form>
