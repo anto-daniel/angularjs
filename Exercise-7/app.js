@@ -1,10 +1,13 @@
-(function() {
-    var app = angular.module('store', []);
-    app.controller('StoreController', function() {
+(function () {
+    "use strict";
+    /*global angular */
+    var app = angular.module('store', []),
+        gems;
+    app.controller('StoreController', function () {
         this.products = gems;
     });
 
-    var gems = [
+    gems = [
         {
             name: 'Dodecahedron',
             price: 2.00,
@@ -13,9 +16,9 @@
                 {
                     full: 'dodecahedron-01-full.jpg',
                     thumb: 'dodecahedron-01-thumb.jpg'
-                },
+                }
             ],
-            canPurchase: true,
+            canPurchase: true
         },
         {
             name: 'Pentagonal gem',
@@ -25,22 +28,22 @@
                 {
                     full: 'pentagonal-01-full.jpg',
                     thumb: 'pentagonal-01-thumb.jpg'
-                },
+                }
             ],
 
-            canPurchase: false,
+            canPurchase: false
         }
     ];
-    app.controller("PanelController", function() {
+    app.controller("PanelController", function () {
         this.tab = 1;
 
-        this.selectTab = function(setTab) {
+        this.selectTab = function (setTab) {
             this.tab = setTab;
         };
 
-        this.isSelected = function(checkTab) {
+        this.isSelected = function (checkTab) {
             return this.tab === checkTab;
         };
 
     });
-})();
+}());
